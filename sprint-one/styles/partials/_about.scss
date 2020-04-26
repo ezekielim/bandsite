@@ -5,7 +5,9 @@
         font: $h1-desktop-header;
         color: $dark;
         font-weight: 700;
-        margin: 3rem, 0, 3rem, 11.25rem; /* CHECK WHY THE LEFT MARGIN WONT APPLY */
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 11.25rem;
     }
     @mixin about-img {
         width: 56rem;
