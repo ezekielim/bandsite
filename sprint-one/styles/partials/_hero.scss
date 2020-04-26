@@ -13,4 +13,12 @@
         color: $alabaster;  
         margin-left: 11.25rem;
     }
+    @include tablet {
+        width: 100%;
+        height: 25rem;
+        .hero__headline {
+            position: relative;
+            left: -10rem;
+        }
+    }
 }

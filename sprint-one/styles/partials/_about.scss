@@ -66,4 +66,24 @@
     &__bio-p1 {
         margin-right: 2.5rem;
     }
+    @include tablet {
+        .about__img {
+            width: 45rem;
+            height: 22.625rem;
+        }
+        .about__heading {
+            position: relative;
+            left: -10rem;
+            bottom: -4rem;
+        }
+        .about__quote-p {
+             width: 45rem;
+        }
+        .about__quote-name {
+             width: 45rem;
+        }
+        .about__bio{
+            width: 45rem;
+        }
+    }
 }

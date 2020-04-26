@@ -29,4 +29,18 @@
         font: $h1-desktop-header;
     }
 
+    @include tablet {
+        .gallery__photos-section {
+            width: 45rem;
+        }
+        .gallery__photos {
+            width: 14rem;
+            height: 7.875rem;
+            margin: 0.2rem;
+        }
+        .gallery__heading {
+            position: relative;
+            left: -1.2rem;
+        }
+    }
 }
