@@ -24,6 +24,13 @@
         padding-bottom: 1.2rem;
         transition: 0.5s;
     }    
+     &__list-items:visited {
+        color: $alabaster;
+        text-decoration-color: $alabaster;
+        border-bottom: thick solid $alabaster;
+        padding-bottom: 1.2rem;
+        transition: 0.5s;
+    }    
     @include tablet {
         .nav-header{
             width: 100%;
@@ -39,7 +46,25 @@
             left: -12rem;
         }
     }
-    @include mobile;
+    @include mobile {
+        .nav-header{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .site-logo{
+          position: relative;
+          top: -1rem;
+        }
+        .nav-header__list-items {
+            width: 100%;
+            position: relative;
+            margin: 0;
+        }
+
+    }
 }
 
 

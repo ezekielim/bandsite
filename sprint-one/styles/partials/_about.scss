@@ -1,4 +1,6 @@
 .about {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     &__heading {
@@ -84,6 +86,33 @@
         }
         .about__bio{
             width: 45rem;
+        }
+    }
+    @include mobile {
+        .about__img {
+            width: 18rem;
+            height: 9.0625rem;
+        }
+        .about__heading {
+            position: relative;
+            left: -10.3rem;
+            bottom: -4rem;
+            width: 20rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .about__quote-p {
+             width: 18rem;
+             font-size: 1.5rem;
+        }
+        .about__quote-name {
+            width: 18rem;
+            font-size: 0.875rem;
+        }
+        .about__bio{
+            width: 18rem;
+            font-size: 0.8125rem;
         }
     }
 }

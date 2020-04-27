@@ -21,12 +21,15 @@
         margin-left: 1.4rem;
     }
     &__photos {
+
         width: 19rem;
         height: 10rem;
         margin: 1.5rem;
     }
     &__heading {
         font: $h1-desktop-header;
+    }
+        
     }
 
     @include tablet {
@@ -36,11 +39,39 @@
         .gallery__photos {
             width: 14rem;
             height: 7.875rem;
-            margin: 0.2rem;
         }
         .gallery__heading {
             position: relative;
             left: -1.2rem;
         }
+
+        // -----------------------
+
+        @include mobile {
+        .gallery {
+            width: 18rem;
+            display: flex;
+            flex-direction: column;
+        }
+            .gallery__photos{
+                width: 18rem;
+                height: 7.875rem;
+                margin: 0.5rem;
+                position: relative;
+            }
+            .gallery__photos-section {
+                width: 18rem;
+                flex-direction: column;
+                margin-top: 1rem;;
+
+            }
+            .about__inner-container {
+                width: 18rem;
+            }
+            .gallery__heading {
+                font: 18rem;
+                margin-top: 1rem;;
+
+            }
+        }
     }
-}
