@@ -10,10 +10,13 @@
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+        position: relative;
+        left: -4rem;
         font: $h4-desktop-para;
         line-height: $h4-desktop-para-line;
         margin-left: auto;
         margin-right: auto
+        
     }
     &__contact-heading{
         font: $h1-desktop-header;
@@ -47,7 +50,8 @@
             width: 45rem;
         }
         .footer__container {
-            width: 45rem;
+            width: 37rem;
+            position: relative;
         }
         .footer__logo {
             position: relative;
@@ -70,18 +74,21 @@
             flex-direction: column;
         }
         .footer__container {
+            width: 11rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: start;
+            position: relative;
         }
         .footer__contact-heading {
+            width: 15rem;
             position: relative;
             top: -2rem;
         }
         .footer__social-img {
             position: relative;
-            top: -11rem;
+            top: -11.5rem;
         }
         .footer--contact {
             position: relative;

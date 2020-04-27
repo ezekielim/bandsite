@@ -357,10 +357,13 @@ html .main-container, body .main-container {
 @media (max-width: 768px) {
   .gallery__photos-section {
     width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .gallery__photos {
     width: 14rem;
     height: 7.875rem;
+    margin: 0;
   }
   .gallery__heading {
     position: relative;
@@ -427,6 +430,8 @@ html .main-container, body .main-container {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+  left: -4rem;
   font: 0.88rem;
   line-height: 1.38rem;
   margin-left: auto;
@@ -474,7 +479,8 @@ html .main-container, body .main-container {
     width: 45rem;
   }
   .footer .footer__container {
-    width: 45rem;
+    width: 37rem;
+    position: relative;
   }
   .footer .footer__logo {
     position: relative;
@@ -499,6 +505,7 @@ html .main-container, body .main-container {
             flex-direction: column;
   }
   .footer .footer__container {
+    width: 11rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -512,14 +519,16 @@ html .main-container, body .main-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    position: relative;
   }
   .footer .footer__contact-heading {
+    width: 15rem;
     position: relative;
     top: -2rem;
   }
   .footer .footer__social-img {
     position: relative;
-    top: -11rem;
+    top: -11.5rem;
   }
   .footer .footer--contact {
     position: relative;
