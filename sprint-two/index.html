@@ -84,12 +84,15 @@
     <section class="profile">
       <img class="profile__img" src="" alt="">
     </section>
-    <form class="form" id="form-id">
-      <label name="name">NAME</label>
+    <section class="form-container">
+    <form id="form-id" class="form">
+      <label name="nameDisplay">NAME</label>
       <input name="name" class="form__name" row="28rem" type="text" placeholder="Name">
       <textarea name="comment" id="" class="form__comment" cols="52" placeholder="add a comment"></textarea>
-      <button type="submit">COMMENT</button>
+      <button type="submit" name="submit">COMMENT</button>
     </form>
+    <ul id="comment-list-id" class="comment-list"></ul>
+    </section>
   </section>
   <section class="footer">
     <section class="footer__container">
@@ -128,7 +131,7 @@
     </section>
     <p class="footer__copyright">Copyright The Bees Knees © 2020 All Rights Reserved</p>
   </section>
-  <script src="../scripts/script.js"></script>
+  <script src="../sprint-two/scripts/bioScript.js"></script>
 </body>
 
 </html>
