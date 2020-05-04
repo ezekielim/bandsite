@@ -1,0 +1,118 @@
+.about {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__heading {
+        font: $h1-desktop-header;
+        color: $dark;
+        font-weight: 700;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 11.25rem;
+    }
+    @mixin about-img {
+        width: 56rem;
+        height: 30rem;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__img {
+        @include about-img
+    }
+    @mixin quote{
+        width: 56rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__quote-p, &__quote-name{
+        @include quote;
+    }
+    &__quote-p {
+        font: $h1-desktop-header;
+        line-height: $h1-desktop-header-line;
+        color: dark;
+        margin: 3rem, 0, 0, 0;
+        padding: 0;
+    }
+    &__quote-name {
+        font: $h2-desktop-header;
+        margin-top: 2.5rem, 0, 0, 0;
+        padding: 0;
+    }
+    &__bio {
+        @include quote;
+        color: $dark;
+        margin-top: 3.125rem, 0, 0, 0;
+    }
+    &__bio-sub {
+        font: $h1-desktop-header;
+        line-height: $h1-desktop-header-line;
+        margin: 3rem, 0, 0, 0;
+        padding: 0;
+        color: $dark;
+    }
+    &__bio-container {
+        display: flex;
+        margin: 0;
+    }
+    &__bio-p1, &__bio-p2 {
+        width: 26.25;
+        font: $h4-desktop-para;
+        line-height: $h4-desktop-para-line;
+        color: $dark;
+        margin-bottom: 3rem;
+    }
+    &__bio-p1 {
+        margin-right: 2.5rem;
+    }
+    @include tablet {
+        .about__img {
+            width: 45rem;
+            height: 22.625rem;
+        }
+        .about__heading {
+            position: relative;
+            left: -10rem;
+            bottom: -4rem;
+        }
+        .about__quote-p {
+             width: 45rem;
+        }
+        .about__quote-name {
+             width: 45rem;
+        }
+        .about__bio{
+            width: 45rem;
+        }
+    }
+    @include mobile {
+        .about__img {
+            width: 18rem;
+            height: 9.0625rem;
+        }
+        .about__heading {
+            position: relative;
+            left: -10.3rem;
+            bottom: -4rem;
+            width: 20rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .about__quote-p {
+             width: 18rem;
+             font-size: 1.5rem;
+        }
+        .about__quote-name {
+            width: 18rem;
+            font-size: 0.875rem;
+        }
+        .about__bio{
+            width: 18rem;
+            font-size: 0.8125rem;
+        }
+    }
+}
