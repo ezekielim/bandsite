@@ -39,3 +39,26 @@ genTable(showsTable);
 /* --------- END OF SHOWS PAGE --------- */
 
 /* --------- BIOGRAPHY COMMENT SECTION --------- */
+let genComments = [
+  {
+    name: "Michael Lyons",
+    date: new Date(2018 - 12 - 18),
+    message:
+      "They BLEW the ROOF off at their last show, once everyone started ﬁguring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed",
+  },
+  {
+    name: "Gary Wong",
+    date: new Date(2018 - 12 - 12),
+    message:
+      "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
+  },
+  {
+    name: "Theodore Duncan",
+    date: new Date(2018 - 11 - 15),
+    message:
+      "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s deﬁnitely my favorite ever",
+  },
+];
+
+let commentform = document.getElementById("comment-form-id");
+function displayComments() {}

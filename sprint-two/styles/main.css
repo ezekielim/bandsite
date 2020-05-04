@@ -683,4 +683,21 @@ html .main-container, body .main-container {
     line-height: 2rem;
   }
 }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__name {
+  width: 28rem;
+}
 /*# sourceMappingURL=main.css.map */
