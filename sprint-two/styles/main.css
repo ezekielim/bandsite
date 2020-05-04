@@ -545,4 +545,52 @@ html .main-container, body .main-container {
     font-size: 1rem;
   }
 }
+
+.shows-hero {
+  width: 100%;
+  height: 41.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../assets/images/aaker-unsplash.jpg);
+  background-size: cover;
+  color: #fafafa;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shows-hero .shows-hero-h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.shows-hero .shows-hero-h1 {
+  width: 35rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.shows-hero__text {
+  margin-left: 10rem;
+}
+
+.shows-hero__sound-cloud {
+  width: 27.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  margin-top: 7rem;
+}
 /*# sourceMappingURL=main.css.map */
