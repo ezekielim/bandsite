@@ -1,7 +1,6 @@
 const commentForm = document.getElementById("form-id");
 const commentList = document.getElementById("comment-list-id");
-// document.getElementById("comment-list-id");
-// let commentData = null;
+
 let commentsRequest = () => {
   axios
     .get(
@@ -13,10 +12,15 @@ let commentsRequest = () => {
       list.setAttribute("id", "list-id");
       function displayComments(commentData) {
         for (i in commentData) {
-          // let result = commentData[i];
-          list.innerHTML = commentData[i];
-          commentList.appendChild(list);
-          console.log(commentData[i]);
+          let listComment = document.createElement("li");
+          let msgName = document.createElement("h3");
+          msgName.innerText = commentData[i].name;
+          let msgDisc = document.createElement("p");
+          msgDisc.innerText = commentData[i].comment;
+
+          listComment.appendChild(msgName);
+          listComment.appendChild(msgDisc);
+          commentList.appendChild(listComment);
         }
       }
       displayComments(commentData);
@@ -28,34 +32,3 @@ let commentsRequest = () => {
     });
 };
 commentsRequest();
-// commentForm.addEventListener("submit", createComment);
-//fn for displaying the array objects
-// let list = document.createElement("p");
-// list.setAttribute("id", "list-id");
-// function displayComments(commentData) {
-//   for (i in commentData) {
-//     // let result = commentData[i];
-//     list.innerHTML = commentData[i].data;
-//     commentList.appendChild(list);
-//     console.log(commentData[i]);
-//   }
-// }
-// displayComments(commentData);
-
-// function createComment(event) {
-//   event.preventDefault();
-
-//   let nameComment = event.target.name.value;
-//   let msgComment = event.target.comment.value;
-//   let dateComment = new Date();
-//   if (nameComment !== "" && msgComment !== "") {
-//     commentData.push({
-//       name: nameComment,
-//       date: msgComment,
-//       message: dateComment,
-//     });
-//     displayComments();
-//   }
-// }
-
-// displayComments();
