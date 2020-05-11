@@ -22,7 +22,7 @@ const genComments = [
 
 const commentForm = document.getElementById("form-id");
 const commentList = document.getElementById("comment-list-id");
-commentList.setAttribute("class", "commentList");
+document.getElementById("comment-list-id").style.width = "500px";
 commentForm.addEventListener("submit", createComment);
 //fn for displaying the array objects
 function displayComments(genComments) {

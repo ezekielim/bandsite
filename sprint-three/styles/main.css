@@ -701,10 +701,14 @@ html .main-container, body .main-container {
   width: 28rem;
 }
 
-.form .commen-list {
+.form .comment-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

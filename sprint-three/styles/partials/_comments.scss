@@ -5,8 +5,9 @@
   &__name {
     width: 28rem;
   }
-  .commen-list {
+  .comment-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
